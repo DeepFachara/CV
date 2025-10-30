@@ -1,0 +1,233 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px auto;
+    max-width: 800px;
+    background: #f8f8f8;
+    color: #222;
+}
+
+.container {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px #ccc;
+    padding: 32px 40px 40px 40px;
+}
+
+.header {
+    border-bottom: 5px solid #5398c4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 26px;
+}
+
+.left,
+.right {
+    padding: 0 20px;
+}
+
+.left {
+    width: 63%;
+    border-right: 2.5px solid #e0e0e0;
+}
+
+.right {
+    width: 37%;
+    padding-left: 38px;
+}
+
+h1 {
+    font-size: 2.2em;
+    margin: 0 0 8px 0;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 34px 0 10px 0;
+    color: #3b8bbd;
+    letter-spacing: 0.8px;
+}
+
+h3 {
+    font-size: 1em;
+    margin: 20px 0 8px 0;
+}
+
+.section-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    background: #c6def0;
+    display: inline-block;
+    padding: 5px 140px 4px 0;
+    margin: 20px 0 14px 0;
+}
+
+.summary {
+    font-size: 1.01em;
+    margin: 10px 0 28px 0;
+}
+
+.experience {
+    margin-bottom: 16px;
+}
+
+ul {
+    padding-left: 1.35em;
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+
+.contact-info {
+    font-size: 0.98em;
+    line-height: 1.7em;
+    margin-bottom: 30px;
+}
+
+.skills-list,
+.lang-list {
+    list-style-type: square;
+    margin-bottom: 16px;
+    margin-left: 15px;
+}
+
+.lang-level-bar {
+    height: 5px;
+    border-radius: 5px;
+    background: #d0e6f7;
+    margin: 7px 0 15px 0;
+}
+
+.lang-level-bar span {
+    display: inline-block;
+    height: 5px;
+    border-radius: 5px;
+    background: #3b8bbd;
+}
+
+.lang-label {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-spacer {
+    margin-bottom: 14px;
+}
+
+/* -----------------------------------
+   ✅ RESPONSIVE DESIGN
+----------------------------------- */
+
+/* Tablet View (≤ 768px) */
+@media screen and (max-width: 768px) {
+
+    body {
+        margin: 10px;
+        max-width: 100%;
+    }
+
+    .container {
+        padding: 25px 25px 30px 25px;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .left {
+        width: 100%;
+        border-right: none;
+        border-bottom: 2px solid #e0e0e0;
+        padding-bottom: 20px;
+    }
+
+    .right {
+        width: 100%;
+        padding-left: 0;
+        margin-top: 25px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 1.9em;
+    }
+
+    h2 {
+        font-size: 1.1em;
+    }
+
+    .section-title {
+        font-size: 1.1em;
+        padding-right: 80px;
+    }
+
+    img {
+        width: 140px;
+        height: auto;
+    }
+}
+
+/* Mobile View (≤ 480px) */
+@media screen and (max-width: 480px) {
+
+    .container {
+        padding: 18px;
+        box-shadow: none;
+    }
+
+    h1 {
+        font-size: 1.7em;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    .section-title {
+        display: block;
+        padding: 6px 0;
+        font-size: 1em;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+        padding: 0;
+    }
+
+    ul {
+        padding-left: 1.1em;
+    }
+
+    .contact-info {
+        font-size: 0.9em;
+        line-height: 1.6em;
+    }
+
+    .skills-list li {
+        font-size: 0.95em;
+    }
+
+    img {
+        width: 120px;
+        height: auto;
+        margin: 0 auto 20px auto;
+        display: block;
+    }
+}
